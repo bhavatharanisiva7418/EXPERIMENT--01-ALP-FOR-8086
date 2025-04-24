@@ -1,12 +1,8 @@
 # EXPERIMENT--01-ALP-FOR-8086
 
-Name :BHAVATHARANI S
-Roll no :212223230032
-Date of experiment :24-04-20205
-
-
-
-
+## Name :BHAVATHARANI S
+## Roll no :212223230032
+## Date of experiment :24-04-20205
 
 ## Aim: To Write and execute ALP on fundamental arithmetic and logical operations
 ## Components required: 8086  emulator 
