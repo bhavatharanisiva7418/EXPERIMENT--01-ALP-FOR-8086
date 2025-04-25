@@ -76,92 +76,89 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 ## Addition  of 8 bit ALP 
 ```
-org 100h
-mov ax,1560h;
-mov bx,0123h;
-add ax,bx;
-mov [1234h],ax;
-ret
+mov al,50h
+mov bl,25h
+add al,bl
+hlt
+
 ```
 
 ## Output  
- ![Screenshot 2025-04-24 140150](https://github.com/user-attachments/assets/3d473dc4-c91e-4747-a671-31aee02c7c88)
+![image](https://github.com/user-attachments/assets/5e456fc4-b634-411d-8e51-f907a0fb093d)
+
 
 ## Subtraction   of 8 bit numbers  ALP 
- ```
-org 100h
-mov ax,2978h;
-mov bx,3781h;
-sub ax,bx;
-mov [4678h],ax;
-ret
+```
+mov al,80h
+mov bl,56h
+sub al,bl
+hlt
 ```
 ## Output  
-![image](https://github.com/user-attachments/assets/e7c5d3d2-86d3-4dd3-9720-568ce284fd40)
+![image](https://github.com/user-attachments/assets/3bec4a42-bc63-4055-bf3d-2ac152544d2d)
+
 
 ## Multiplication alp
 ```
-org 100h
-mov ax,4028h;
-mov bx,3421h;
-mul ax;
-mov [4004h],ax;
-ret
+mov al,28h
+mov bl,36h
+mul bl
+hlt
 ```
  ## Output  
-![image](https://github.com/user-attachments/assets/28aab1af-e3ad-4e63-b6bb-741fa4bdcb3b)
+![image](https://github.com/user-attachments/assets/adf65ab9-5493-4f03-88a8-c666ada06904)
+
 
 ## Division alp 
 ```
-org 100h
-MOV al,23h;
-MOV bl,[2956h];
-DIV bl;
-MOV [2956h],al;
-ret
+mov al,28h
+mov bl,36h
+mul bl
+hlt
 ```
 ## Output  
-![image](https://github.com/user-attachments/assets/418744a6-a1ae-4d69-afe9-86e764034157)
+![image](https://github.com/user-attachments/assets/a38c3af4-9072-47d6-9a3d-042f81c54724)
+
 
 ## AND Operation
 ```
-org 100h
-
-mov SI,0532h;
-mov ax,0A24h;
-mov bx,0b14h;
-and ax,bx; 
-mov [0007h],ax;
-ret
+mov al,18h
+mov bl,46h
+and al,bl
+hlt
 ```
 ## Output
-![image](https://github.com/user-attachments/assets/eb5191d8-bd2d-4b87-a11f-b3318e42e472)
+![image](https://github.com/user-attachments/assets/c28be218-e458-44f1-ae0d-e9f2676b97be)
 
 ## OR Operation
 ```
-org 100h
-mov [SI+2],ax;
-mov ax,0A42h;
-not ax
-xor ax,bx; 
-mov [0008h],ax;
-ret
+mov al,18h
+mov bl,46h
+or al,bl
+hlt
 ```
 ## Output
-![image](https://github.com/user-attachments/assets/e34c6ee4-4ed7-456f-a11f-acc0179be0f7)
+![image](https://github.com/user-attachments/assets/9044a58b-e055-499d-8a71-9fac6c137949)
+
 
 ## XOR Operation
 ```
-org 100h
-mov [SI+2],ax;
-mov ax,0A22h;
-not ax
-xor ax,bx; 
-mov [0008h],ax;
-ret
+mov al,18h
+mov bl,46h
+xor al,bl
+hlt
 ```
 ## Output
-![image](https://github.com/user-attachments/assets/c197b9ac-7df9-4875-b517-0fbf75a5b668)
+![image](https://github.com/user-attachments/assets/70379233-4799-4386-87ee-7ca1e6cdbac5)
+
+## NOT Operation
+```
+mov al,18h
+not al
+hlt
+```
+## Output
+![image](https://github.com/user-attachments/assets/c8d66cd4-8700-4f91-a608-0239f9dd1977)
 
 
 ## Result :
